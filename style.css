@@ -32,7 +32,8 @@ header nav {
   height: 100%;
   width: 100%;
   padding: 0 10px;
-  background-color:#fafafa;
+  background-color: #392c1e;
+  flex-direction: row;
   
   /*opacity: 0.2;*/
   /*background-color: #222;*/
@@ -40,57 +41,18 @@ header nav {
 
 a {
   text-decoration: none;
+  
 }
-
-/*============= LOG HEADER ===========*/
-.buttonLogHeader {
-    display: flex;
-    /*background-color: red;*/
-  }
-#buttonLog {
-  width: 150px;
-  background-color: #222;
-  color: #fafafa;
-  border: none;
-  font-size: 18px;
-}
-
-#buttonLog:hover {
-  font-weight: bold;
-}
-
-/*============ MENU HEADER ================*/
-.buttonGen {
-  border-radius: 20px;
-  height: 24px;
-  width: 80px;
-  margin: 5px 5px;
-  font-size: 18px;
-  text-decoration: none;
-  border: none;
-  color: black;
-  background-color: #fafafa;
-}
-
-.buttonGen:hover {
-  border-radius: 20px;
-  height: 24px;
-  width: 80px;
-  margin: 5px 5px;
-  font-size: 18px;
-  font-weight: bold;
-  color: black;
-  text-decoration: none;
-  border:none;
-}
-
-
-/*======ICON LOGO HEADER ======*/
+/*====== LOGO HEADER ======*/
 #anchorIconLogo {
   display: flex;
   align-items: center;
   height: 100px;
   width: 9em;
+  font-family: 'Lucida Calligraphy New', sans-serif;
+  font-size: 36px;
+  font-style: italic;                                              
+  color: #b6ac97;
   
 }
 
@@ -98,15 +60,316 @@ a {
   width: 100%;
   height: 100%; 
 }
-.menu {
+/*=======END LOGO HEADER =========*/
+
+/*============= LOG HEADER ===========*/
+.buttonLogHeader {
+  display: flex;
+  /*background-color: red;*/
+}
+#buttonLog {
+  width: 150px;
+  background-color: #906427;
+  color: #b6ac97;
+  border: solid 1px #b6ac97;
+  border-radius: 10px;
+  font-size: 24px;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: normal;
+}
+
+#buttonLog:hover {
+  font-weight: bold;
+}
+.iconConnected{
   display: none;
 }
-.underMenu {
-  display: flex;
-  justify-content:space-evenly;
-  position:absolute;
-  width: 100vw;
-  top:100px;
-  left:0px;
-  background-color:#fafafa; 
+
+/*============ MENU HEADER ================*/
+.buttonGen {
+  border-radius: 10px;
+  height: 30px;
+  width: 125px;
+  margin: 5px 5px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  color: #b6ac97;
+  /*background-color: rgba(0, 0, 0, 0);*/
+  background-color: #392c1e;
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.buttonGen:hover {
+  font-weight: bold;
+}
+#buttonFormule {
+  border-radius: 10px;
+  height: 30px;
+  width: 125px;
+  margin: 5px 5px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  color: #b6ac97;
+  background-color: rgba(0, 0, 0, 0);
+  /*background-color: #392c1e;*/
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+.buttonActive {
+  border-radius: 10px;
+  height: 30px;
+  width: 125px;
+  margin: 5px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  color: #392c1e;
+  background-color: #b6ac97;
+  /*background-color: #392c1e;*/
+  font-family: 'Hind Madurai', sans-serif;
+
+}
+.buttonInactive {
+  border-radius: 10px;
+  height: 30px;
+  width: 125px;
+  margin: 5px 5px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  color: #b6ac97;
+  background-color: rgba(0, 0, 0, 0);
+  /*background-color: #392c1e;*/
+  font-family: 'Hind Madurai', sans-serif;
+
+}
+.buttonInactive:link {
+  text-decoration: none;
+}
+.buttonInactive:visited {
+  text-decoration: underline;
+}
+.buttonInactive:hover {
+  font-weight: bold;
+}
+.buttonInactive:active {
+  text-decoration: underline;
+}
+
+.underButtonActive {
+  border-radius: 10px;
+  height: 30px;
+  width: 125px;
+  margin: 5px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  color: #b6ac97;
+  background-color: #906427;
+  /*background-color: #392c1e;*/
+  font-family: 'Hind Madurai', sans-serif;
+
+}
+.underButtonInactive {
+  border-radius: 10px;
+  height: 30px;
+  width: 125px;
+  margin: 5px 5px;
+  font-size: 20px;
+  text-decoration: none;
+  border: none;
+  color: #392c1e;
+  background-color: rgba(0, 0, 0, 0);
+  /*background-color: #392c1e;*/
+  font-family: 'Hind Madurai', sans-serif;
+
+}
+.underButtonInactive:hover {
+  font-weight: bold;
+}
+
+/*============ SOUS MENU HEADER ================*/
+
+
+/*============ END SOUS MENU HEADER ================*/
+
+/*============== START MEDIA QUERIES ==================*/
+
+/*============== min 240px max 576px ==================*/
+@media screen and (min-width: 240px) and (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+  .underMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:100px;
+    left:0px;
+    background-color: #906427; 
+  }
+
+  .underUnderMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:140px;
+    left:0px;
+    background-color: #b6ac97;
+    color: #392c1e ;
+  }
+  #anchorIconLogo {
+    font-size: 24px;
+  }
+  #buttonLog {
+    width: 110px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: normal;
+  }
+  
+  #buttonLog:hover {
+    font-weight: bold;
+  }
+  
+}
+
+
+/*============== min 577px max 719px ====================*/
+@media screen and (min-width: 577px) and (max-width: 719px) {
+  .menu {
+    display: none;
+  }
+  .underMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:100px;
+    left:0px;
+    background-color:#906427; 
+  }
+  .underUnderMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:140px;
+    left:0px;
+    background-color: #b6ac97;
+    color: #392c1e ;
+  }
+  #anchorIconLogo {
+    font-size: 36px;
+
+  }
+}
+/*============== min 720px max 1199px ==================*/
+@media screen and (min-width: 720px) and (max-width: 1199px) {
+  .menu {
+    display: none;
+  }
+  .underMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:100px;
+    left:0px;
+    background-color:#906427; 
+  }
+  .underUnderMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:140px;
+    left:0px;
+    background-color: #b6ac97;
+    color: #392c1e ;
+  }
+}
+/*============== min 1200px max 1399px ===================*/
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+
+  .underMenu {
+    display: none;
+  }
+  .underUnderMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:100px;
+    left:0px;
+    background-color: #b6ac97;
+    color: #392c1e ;
+  }
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    background-color: #392c1e;
+    /*border: solid 5px #1815cb;*/
+  }
+  .buttonGen {
+    font-size: 20px;
+    width: 200px;
+
+  }
+  .buttonGen:hover {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .buttonLogHeader {
+    display: flex;
+    /*background-color: red;*/
+  }
+}
+/*======================== min 1400px ===========================*/
+@media screen and (min-width: 1400px){
+  .underMenu {
+    display: none;
+  }
+  .underUnderMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100vw;
+    top:100px;
+    left:0px;
+    background-color: #b6ac97;
+    color: #392c1e ;
+  }
+  .menu {
+    
+    display: flex;
+    justify-content: space-evenly;
+    width: 700px;
+    background-color: #392c1e;
+    /*border: solid 5px #1815cb;*/
+    
+  }
+  .buttonGen {
+    font-size: 20px;
+    width: 200px;
+
+  }
+  .buttonGen:hover {
+    font-size: 20px;
+    width: 200px;
+
+  }  
+  .buttonLogHeader {
+    display: flex-inline;
+    /*background-color: red;*/
+  }
 }
