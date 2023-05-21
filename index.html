@@ -4,14 +4,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<meta name="description" content="Le Quai Antique. Arnaud Michand, chef étoilé, vous accueille avec son équipe, dans son nouveau restaurant à Chambéry.Au cœur de la Savoie dans un cadre idéal, venez vivre une expérience inoubliable, découvrez sa carte gastronomique, dégustez les spécialités locales, un déjeuner sur le pouce avec nos plats du jour revisités. Venez et évadez-vous .">-->
+    <meta name="description" content="Le Quai Antique. Arnaud Michand, chef étoilé, vous accueille avec son équipe, dans son nouveau restaurant à Chambéry.Au cœur de la Savoie dans un cadre idéal, venez vivre une expérience inoubliable, découvrez sa carte gastronomique, dégustez les spécialités locales, un déjeuner sur le pouce avec nos plats du jour revisités. Venez et évadez-vous .">
+    <link href="https://fonts.cdnfonts.com/css/lucida-calligraphy-new" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/hind-madurai" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lora" rel="stylesheet">
     <title>Le Quai Antique</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
-    
+  <body> 
     <header class="z-3">
       <nav>
         <a id="anchorIconLogo" aria-label="visit homepage" aria-current="page">Le Quai Antique
@@ -19,24 +21,38 @@
         </a>
         
         <div id="menu" class="menu underMenu">
-          <a class="buttonMenuHeader" href="les-formules.html">
-            <button class="buttonGen">Les formules</button>
+          <a id="tabFormules" class="buttonMenuHeader" href="menu.html">
+            <button class="buttonInactive">Les formules</button>
           </a>
-          <a class="buttonMenuHeader" href="specialites.html">
-            <button class="buttonGen">Spécialités</button>
+          <a id="tabSpecialites" class="buttonMenuHeader" href="spécialités.html">
+            <button class="buttonInactive">Spécialités</button>
           </a>
-          <a class="buttonMenuHeader" href="Horaire-plan.html">
-            <button class="buttonGen">Horaire/Plan</button>
+          <a id="tabHourPlan" class="buttonMenuHeader" href="horaire-plan.html">
+            <button class="buttonInactive">Horaire/Plan</button>
           </a>
         </div>
+
+        <!--<div class="underUnderMenu">
+          <a class="buttonMenuHeader" href="menu.html">
+            <button class="buttonGen">La carte</button>
+          </a>
+          <a class="buttonMenuHeader" href="formule-du-marché.html">
+            <button class="buttonGen">Du marché</button>
+          </a>
+          <a class="buttonMenuHeader" href="formule-enfant.html">
+            <button class="buttonGen">Enfant</button>
+          </a>
+        </div>-->
         
         <div>
           <a class="buttonLogHeader" href="autentication.html" >
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
-              <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-              <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
-            </svg>
-            <button id="buttonLog" >Log in/Sign up</button>
+            <div class="iconConnected">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
+                <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
+              </svg>
+            </div>
+            <button id="buttonLog" >Connexion</button>
           </a>
         </div>
       </nav>
