@@ -196,6 +196,141 @@ a {
 
 
 /*============ END SOUS MENU HEADER ================*/
+h1 {
+  font-family: 'Lucida Calligraphy New', sans-serif;
+  font-size: 36px;
+}
+.callPhone::before {
+  content: "\260F";
+
+}
+
+main {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+  background-color: #d0d067;
+}
+/*============= START FOOTER =================*/
+footer {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  /*height: 300px;*/
+  background-color: #392c1e;
+  color:#b6ac97;
+}
+.grid-contenair-footer {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  /*grid-template: 1fr 30px / 1fr 1fr;*/
+  gap: 10px 20px;
+  
+}
+
+
+.grid-item-contact-footer {
+  width: 100%;
+  grid-column: 1;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  padding: 10px;
+}
+.contact-footer a {
+  color: #b6ac97;
+  align-content: center;
+}
+.grid-item-contact-footer nav {
+  display: flex;
+}
+.socialNav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.socialLink {
+  width: 60%;
+  height: 100%;
+  margin:10px;
+  list-style-type: none;
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+
+/*=====================================*/
+.grid-item-hour-footer {
+  /*grid-column: 2;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item-hour-footer table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item-hour-footer thead {
+  display: flexbox;
+  align-self: center;
+  
+}
+.grid-item-hour-footer table {
+  width: 100%;
+  display: flexbox;
+  justify-content: center;
+  align-self: center;
+}
+.grid-item-hour-footer tbody tr {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.grid-item-hour-footer tbody tr td {
+  width: 115px;
+  padding: 0 5px;
+  display: flexbox;
+  align-self: center;
+  
+}
+
+/*======================================*/
+.grid-item-lien-footer {
+  /*grid-row: 2;*/
+  /*grid-column: span 2;*/
+  
+  display:flex;
+  justify-content: space-around;
+}
+.grid-item-lien-footer ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+.grid-item-lien-footer li {
+  margin: 0 5px;
+}
+.grid-item-lien-footer a {
+  color: #b6ac97;
+}
+
+
 
 /*============== START MEDIA QUERIES ==================*/
 
@@ -238,7 +373,15 @@ a {
   #buttonLog:hover {
     font-weight: bold;
   }
-  
+  .grid-contenair-footer {
+    grid-template: 1fr  1fr 30px / 1fr;
+  }
+  .grid-item-hour-footer {
+    grid-column: 1;
+  }
+  .grid-item-lien-footer {
+    grid-row: 3;
+  }
 }
 
 
@@ -270,6 +413,15 @@ a {
     font-size: 36px;
 
   }
+  .grid-contenair-footer {
+    grid-template: 1fr  1fr 30px / 1fr;
+  }
+  .grid-item-hour-footer {
+    grid-column: 1;
+  }
+  .grid-item-lien-footer {
+    grid-row: 3;
+  }
 }
 /*============== min 720px max 1199px ==================*/
 @media screen and (min-width: 720px) and (max-width: 1199px) {
@@ -294,6 +446,15 @@ a {
     left:0px;
     background-color: #b6ac97;
     color: #392c1e ;
+  }
+  .grid-contenair-footer {
+    grid-template: 1fr  1fr 30px / 1fr;
+  }
+  .grid-item-hour-footer {
+    grid-column: 1;
+  }
+  .grid-item-lien-footer {
+    grid-row: 3;
   }
 }
 /*============== min 1200px max 1399px ===================*/
@@ -333,6 +494,16 @@ a {
     display: flex;
     /*background-color: red;*/
   }
+  .grid-contenair-footer {
+    grid-template: 1fr 30px / 1fr 1fr;
+  }
+  .grid-item-hour-footer {
+    grid-column: 2;
+  }
+  .grid-item-lien-footer {
+    grid-row: 2;
+    grid-column: span 2;
+  }
 }
 /*======================== min 1400px ===========================*/
 @media screen and (min-width: 1400px){
@@ -371,5 +542,15 @@ a {
   .buttonLogHeader {
     display: flex-inline;
     /*background-color: red;*/
+  }
+  .grid-contenair-footer {
+    grid-template: 1fr 30px / 1fr 1fr;
+  }
+  .grid-item-hour-footer {
+    grid-column: 2;
+  }
+  .grid-item-lien-footer {
+    grid-row: 2;
+    grid-column: span 2;
   }
 }
