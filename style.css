@@ -1,7 +1,7 @@
 html {
   height: 100%;
   width: 100%;
-  min-width: 360px;
+  min-width: 380px;
   
 }
 
@@ -12,7 +12,7 @@ html {
 
 body {
   width: 100%;
-  min-width: 360px;
+  min-width: 380px;
   background-color: #d1d1d1;
 }
 
@@ -204,14 +204,81 @@ h1 {
   content: "\260F";
 
 }
-
+/*==============================START MAIN ============================*/
 main {
-  display: flex;
+  display: flexbox;
   align-items: center;
   width: 100vw;
-  height: 300px;
-  background-color: #d0d067;
+  min-height: 582px;
+  background-color: #fafafa;
+  top: 100px;
+  
 }
+.cardA {
+  background-color: #392c1e;
+  
+}
+.sectionMenu {
+  display: flex;
+  position: relative;
+}
+.cardMenu {
+  position: relative;
+  background-color: #fafafa;
+  color:#b6ac97
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.section-scroll {
+  width: 100%;
+  left: -1px;
+  display: block;
+  position: relative;
+  /*top: 140px;*/
+  min-height: 291px;
+  background-color: #392c1e;
+  
+  
+}
+.cardScroll {
+  display: flex;
+  width: 100vw;
+  /*min-height: 291px;*/
+  
+  background-color: #392c1e;
+  color: white;
+  font-size: 36px;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px white;
+  
+}
+.sectionPresentation {
+  position: relative;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #906427;
+
+}
+.cardB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #392c1e;
+}
+.cardB h3 {
+  display: flexbox;
+  
+  margin: 10px;
+}
+/*============================ END MAIN ================================*/
 /*============= START FOOTER =================*/
 footer {
   display: flex;
@@ -382,6 +449,9 @@ footer {
   .grid-item-lien-footer {
     grid-row: 3;
   }
+  .section-scroll, .sectionMenu {
+    top: 140px;
+  }
 }
 
 
@@ -422,6 +492,12 @@ footer {
   .grid-item-lien-footer {
     grid-row: 3;
   }
+  .section-scroll {
+    top: 140px;
+  }
+  .sectionMenu {
+    top: 140px;
+  }
 }
 /*============== min 720px max 1199px ==================*/
 @media screen and (min-width: 720px) and (max-width: 1199px) {
@@ -455,6 +531,9 @@ footer {
   }
   .grid-item-lien-footer {
     grid-row: 3;
+  }
+  .section-scroll, .sectionMenu {
+    top: 140px;
   }
 }
 /*============== min 1200px max 1399px ===================*/
@@ -493,6 +572,9 @@ footer {
   .buttonLogHeader {
     display: flex;
     /*background-color: red;*/
+  }
+  .section-scroll, .sectionMenu {
+    top: 100px;
   }
   .grid-contenair-footer {
     grid-template: 1fr 30px / 1fr 1fr;
@@ -542,6 +624,9 @@ footer {
   .buttonLogHeader {
     display: flex-inline;
     /*background-color: red;*/
+  }
+  .section-scroll, .sectionMenu {
+    top: 100px;
   }
   .grid-contenair-footer {
     grid-template: 1fr 30px / 1fr 1fr;
