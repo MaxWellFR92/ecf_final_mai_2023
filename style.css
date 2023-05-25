@@ -1,7 +1,7 @@
 html {
   height: 100%;
   width: 100%;
-  min-width: 380px;
+  /*min-width: 360px;*/
   
 }
 
@@ -209,7 +209,7 @@ main {
   display: flexbox;
   align-items: center;
   width: 100vw;
-  min-height: 582px;
+  /*min-height: 582px;*/
   background-color: #fafafa;
   top: 100px;
   
@@ -219,8 +219,10 @@ main {
   
 }
 .sectionMenu {
-  display: flex;
+  display: block;
   position: relative;
+  height: 100%;
+  
 }
 .cardMenu {
   position: relative;
@@ -234,7 +236,7 @@ main {
 }
 .section-scroll {
   width: 100%;
-  left: -1px;
+  /*left: -1px;*/
   display: block;
   position: relative;
   /*top: 140px;*/
@@ -253,7 +255,7 @@ main {
   font-size: 36px;
   justify-content: center;
   align-items: center;
-  border: solid 2px white;
+  /*border: solid 2px white;*/
   
 }
 .sectionPresentation {
@@ -272,14 +274,19 @@ main {
   justify-content: center;
   align-items: center;
   color: #392c1e;
+  background-color: #fafafa;
 }
-.cardB h3 {
+.cardB h2 {
   display: flexbox;
-  
   margin: 10px;
 }
-/*============================ END MAIN ================================*/
-/*============= START FOOTER =================*/
+.cardB span {
+  font-size: 20px;
+  font-weight:bold;
+}
+/*=================== END MAIN =====================*/
+
+/*================== START FOOTER =================*/
 footer {
   display: flex;
   align-items: center;
@@ -297,7 +304,7 @@ footer {
   
 }
 
-
+/*-------------- grid item contact footer ---------------*/
 .grid-item-contact-footer {
   width: 100%;
   grid-column: 1;
@@ -338,7 +345,7 @@ footer {
   justify-content: space-between;
 }
 
-/*=====================================*/
+/*------------------- start grid item hour footer ------------------*/
 .grid-item-hour-footer {
   /*grid-column: 2;*/
   display: flex;
@@ -378,7 +385,7 @@ footer {
   
 }
 
-/*======================================*/
+/*--------------- grid item lien footer -------------------*/
 .grid-item-lien-footer {
   /*grid-row: 2;*/
   /*grid-column: span 2;*/
@@ -397,7 +404,7 @@ footer {
   color: #b6ac97;
 }
 
-
+/*=================== END  FOOTER =====================*/
 
 /*============== START MEDIA QUERIES ==================*/
 
@@ -440,6 +447,8 @@ footer {
   #buttonLog:hover {
     font-weight: bold;
   }
+
+  /*--------------------------------------*/
   .grid-contenair-footer {
     grid-template: 1fr  1fr 30px / 1fr;
   }
@@ -449,8 +458,16 @@ footer {
   .grid-item-lien-footer {
     grid-row: 3;
   }
-  .section-scroll, .sectionMenu {
+  .section-scroll {
     top: 140px;
+  }
+  .sectionMenu {
+    top: 180px;
+  }
+  .footer-page-menu {
+    display: block;
+    position:relative;
+    top: 180px;
   }
 }
 
@@ -496,7 +513,12 @@ footer {
     top: 140px;
   }
   .sectionMenu {
-    top: 140px;
+    top: 180px;
+  }
+  .footer-page-menu {
+    display: block;
+    position:relative;
+    top: 180px;
   }
 }
 /*============== min 720px max 1199px ==================*/
@@ -532,8 +554,16 @@ footer {
   .grid-item-lien-footer {
     grid-row: 3;
   }
-  .section-scroll, .sectionMenu {
+  .section-scroll {
     top: 140px;
+  }
+  .sectionMenu {
+    top: 180px;
+  }
+  .footer-page-menu {
+    display: block;
+    position:relative;
+    top: 180px;
   }
 }
 /*============== min 1200px max 1399px ===================*/
@@ -555,7 +585,7 @@ footer {
   .menu {
     display: flex;
     justify-content: space-between;
-    width: 700px;
+    width: 600px;
     background-color: #392c1e;
     /*border: solid 5px #1815cb;*/
   }
@@ -573,8 +603,16 @@ footer {
     display: flex;
     /*background-color: red;*/
   }
-  .section-scroll, .sectionMenu {
+  .section-scroll {
     top: 100px;
+  }
+  .sectionMenu {
+    top: 140px;
+  }
+  .footer-page-menu {
+    display: block;
+    position:relative;
+    top: 140px;
   }
   .grid-contenair-footer {
     grid-template: 1fr 30px / 1fr 1fr;
@@ -625,8 +663,16 @@ footer {
     display: flex-inline;
     /*background-color: red;*/
   }
-  .section-scroll, .sectionMenu {
+  .section-scroll {
     top: 100px;
+  }
+  .sectionMenu {
+    top: 140px;
+  }
+  .footer-page-menu {
+    display: block;
+    position:relative;
+    top: 140px;
   }
   .grid-contenair-footer {
     grid-template: 1fr 30px / 1fr 1fr;
