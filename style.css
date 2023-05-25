@@ -461,6 +461,14 @@ footer {
   .section-scroll {
     top: 140px;
   }
+  .sectionPresentation {
+    top: 140px;
+  }
+  .footer-page-index {
+    display: block;
+    position:relative;
+    top: 140px;
+  }
   .sectionMenu {
     top: 180px;
   }
@@ -469,6 +477,7 @@ footer {
     position:relative;
     top: 180px;
   }
+  
 }
 
 
@@ -510,6 +519,14 @@ footer {
     grid-row: 3;
   }
   .section-scroll {
+    top: 140px;
+  }
+  .sectionPresentation {
+    top: 140px;
+  }
+  .footer-page-index {
+    display: block;
+    position:relative;
     top: 140px;
   }
   .sectionMenu {
@@ -556,6 +573,14 @@ footer {
     grid-row: 3;
   }
   .section-scroll {
+    top: 140px;
+  }
+  .sectionPresentation {
+    top: 140px;
+  }
+  .footer-page-index {
+    display: block;
+    position:relative;
     top: 140px;
   }
   .sectionMenu {
@@ -606,6 +631,14 @@ footer {
     /*background-color: red;*/
   }
   .section-scroll {
+    top: 100px;
+  }
+  .sectionPresentation {
+    top: 100px;
+  }
+  .footer-page-index {
+    display: block;
+    position:relative;
     top: 100px;
   }
   .sectionMenu {
@@ -667,6 +700,14 @@ footer {
     /*background-color: red;*/
   }
   .section-scroll {
+    top: 100px;
+  }
+  .sectionPresentation {
+    top: 100px;
+  }
+  .footer-page-menu {
+    display: block;
+    position:relative;
     top: 100px;
   }
   .sectionMenu {
