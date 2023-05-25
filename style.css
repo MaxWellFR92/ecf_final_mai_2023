@@ -222,6 +222,7 @@ main {
   display: block;
   position: relative;
   height: 100%;
+  background-color: #fafafa;
   
 }
 .cardMenu {
@@ -266,6 +267,7 @@ main {
   align-items: center;
   
   background-color: #906427;
+  
 
 }
 .cardB {
@@ -273,8 +275,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #392c1e;
-  background-color: #fafafa;
+  color: #b6ac97;
+  
 }
 .cardB h2 {
   display: flexbox;
@@ -386,10 +388,8 @@ footer {
 }
 
 /*--------------- grid item lien footer -------------------*/
+/* --------------propiete css dans media queries-----------*/
 .grid-item-lien-footer {
-  /*grid-row: 2;*/
-  /*grid-column: span 2;*/
-  
   display:flex;
   justify-content: space-around;
 }
