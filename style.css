@@ -20,7 +20,7 @@ header {
   position: fixed;
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100px;
   background-color: #d0d067; 
 }
@@ -120,9 +120,9 @@ a {
 .buttonActive {
   border-radius: 10px;
   height: 30px;
-  width: 125px;
+  /*width: 125px;*/
   margin: 5px 5px;
-  font-size: 20px;
+  /*font-size: 20px;*/
   font-weight: bold;
   text-decoration: none;
   border: none;
@@ -135,9 +135,9 @@ a {
 .buttonInactive {
   border-radius: 10px;
   height: 30px;
-  width: 125px;
+  /*width: 125px;*/
   margin: 5px 5px;
-  font-size: 20px;
+  /*font-size: 20px;*/
   text-decoration: none;
   border: none;
   color: #b6ac97;
@@ -162,9 +162,9 @@ a {
 .underButtonActive {
   border-radius: 10px;
   height: 30px;
-  width: 125px;
+  /*width: 125px;*/
   margin: 5px 5px;
-  font-size: 20px;
+  /*font-size: 20px;*/
   font-weight: bold;
   text-decoration: none;
   border: none;
@@ -177,9 +177,9 @@ a {
 .underButtonInactive {
   border-radius: 10px;
   height: 30px;
-  width: 125px;
+  /*width: 125px;*/
   margin: 5px 5px;
-  font-size: 20px;
+  /*font-size: 20px;*/
   text-decoration: none;
   border: none;
   color: #392c1e;
@@ -208,7 +208,7 @@ h1 {
 main {
   display: flexbox;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   /*min-height: 582px;*/
   background-color: #fafafa;
   top: 100px;
@@ -248,7 +248,7 @@ main {
 }
 .cardScroll {
   display: flex;
-  width: 100vw;
+  width: 100%;
   /*min-height: 291px;*/
   
   background-color: #392c1e;
@@ -292,13 +292,13 @@ main {
 footer {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   /*height: 300px;*/
   background-color: #392c1e;
   color:#b6ac97;
 }
 .grid-contenair-footer {
-  width: 90%;
+  width: 100%;
   margin: auto;
   display: grid;
   /*grid-template: 1fr 30px / 1fr 1fr;*/
@@ -407,9 +407,8 @@ footer {
 /*=================== END  FOOTER =====================*/
 
 /*============== START MEDIA QUERIES ==================*/
-
-/*============== min 240px max 576px ==================*/
-@media screen and (min-width: 240px) and (max-width: 576px) {
+/*============== min 240px max 379px ==================*/
+@media screen and (min-width: 240px) and (max-width: 379px) {
   .menu {
     display: none;
   }
@@ -417,17 +416,121 @@ footer {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:100px;
     left:0px;
     background-color: #906427; 
+  }
+  .buttonActive {
+    width: 80px;
+    font-size: 16px;
+  }
+  .buttonInactive {
+    width: 80px;
+    font-size: 16px;
+  }
+  .underButtonActive {
+    width: 80px;
+    font-size: 16px;
+  }
+  .underButtonInactive {
+    width: 80px;
+    font-size: 16px;
+  }
+  .underUnderMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100%;
+    top:140px;
+    left:0px;
+    background-color: #b6ac97;
+    color: #392c1e ;
+  }
+  #anchorIconLogo {
+    font-size: 24px;
+  }
+  #buttonLog {
+    width: 110px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: normal;
+  }
+  
+  #buttonLog:hover {
+    font-weight: bold;
+  }
+
+  /*--------------------------------------*/
+  .grid-contenair-footer {
+    grid-template: 1fr  1fr 30px / 1fr;
+  }
+  .grid-item-hour-footer {
+    grid-column: 1;
+  }
+  .grid-item-lien-footer {
+    grid-row: 3;
+  }
+  .section-scroll {
+    top: 140px;
+  }
+  .sectionPresentation {
+    top: 140px;
+  }
+  .footer-page-index {
+    display: block;
+    position:relative;
+    top: 140px;
+  }
+  .sectionMenu {
+    top: 180px;
+  }
+  .footer-page-menu {
+    display: block;
+    position:relative;
+    top: 180px;
+  }
+  
+}
+
+
+/*============== min 380px max 576px ==================*/
+@media screen and (min-width: 380px) and (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+  .underMenu {
+    display: flex;
+    justify-content:space-evenly;
+    position:absolute;
+    width: 100%;
+    top:100px;
+    left:0px;
+    background-color: #906427; 
+  }
+  .buttonActive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .buttonInactive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .underButtonActive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .underButtonInactive {
+    width: 125px;
+    font-size: 20px;
   }
 
   .underUnderMenu {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:140px;
     left:0px;
     background-color: #b6ac97;
@@ -490,16 +593,32 @@ footer {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:100px;
     left:0px;
     background-color:#906427; 
+  }
+  .buttonActive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .buttonInactive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .underButtonActive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .underButtonInactive {
+    width: 125px;
+    font-size: 20px;
   }
   .underUnderMenu {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:140px;
     left:0px;
     background-color: #b6ac97;
@@ -548,16 +667,32 @@ footer {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:100px;
     left:0px;
     background-color:#906427; 
+  }
+  .buttonActive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .buttonInactive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .underButtonActive {
+    width: 125px;
+    font-size: 20px;
+  }
+  .underButtonInactive {
+    width: 125px;
+    font-size: 20px;
   }
   .underUnderMenu {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:140px;
     left:0px;
     background-color: #b6ac97;
@@ -603,7 +738,7 @@ footer {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:100px;
     left:0px;
     background-color: #b6ac97;
@@ -670,7 +805,7 @@ footer {
     display: flex;
     justify-content:space-evenly;
     position:absolute;
-    width: 100vw;
+    width: 100%;
     top:100px;
     left:0px;
     background-color: #b6ac97;
